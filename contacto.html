@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | MDTECH SOFT - Alquiler de Coches de Lujo</title>
+    <meta name="description" content="Contacta con MDTECH SOFT para reservar tu coche de lujo. Atencion personalizada 24/7 en toda Espana.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-logo">MDTECH SOFT</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MDTECH SOFT</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"><span></span></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="flota.html">Flota</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Marcas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="flota.html?marca=ferrari">Ferrari</a></li>
+                            <li><a class="dropdown-item" href="flota.html?marca=lamborghini">Lamborghini</a></li>
+                            <li><a class="dropdown-item" href="flota.html?marca=porsche">Porsche</a></li>
+                            <li><a class="dropdown-item" href="flota.html?marca=mercedes">Mercedes</a></li>
+                            <li><a class="dropdown-item" href="flota.html?marca=bmw">BMW</a></li>
+                            <li><a class="dropdown-item" href="flota.html?marca=audi">Audi</a></li>
+                            <li><a class="dropdown-item" href="flota.html?marca=range-rover">Range Rover</a></li>
+                            <li><a class="dropdown-item" href="flota.html?marca=bentley">Bentley</a></li>
+                            <li><a class="dropdown-item" href="flota.html?marca=ford-mustang">Ford Mustang</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn-gold" href="#reservar">Reservar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Contacta con <span class="text-gold">Nosotros</span></h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active">Contacto</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="section-padding" style="background: var(--color-black);">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="contact-info-card text-center fade-in">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Ubicacion</h4>
+                        <p>Moll d'Espanya, 5<br>08039 Barcelona</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="contact-info-card text-center fade-in">
+                        <i class="fas fa-phone"></i>
+                        <h4>Telefono</h4>
+                        <p><a href="tel:+34918107428">+34 918 10 74 28</a><br><a href="tel:+34647881713">+34 647 881 713</a></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="contact-info-card text-center fade-in">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p><a href="mailto:reservas@MDTECH SOFT.es">reservas@MDTECH SOFT.es</a></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="contact-info-card text-center fade-in">
+                        <i class="fas fa-clock"></i>
+                        <h4>Horario</h4>
+                        <p>Lunes - Domingo<br>10:00 - 20:00h</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="contact-form-section" id="reservar">
+                        <h3 class="mb-4" style="font-family: var(--font-display);">Formulario de <span class="text-gold">Reserva</span></h3>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Nombre Completo *</label>
+                                        <input type="text" class="form-control" placeholder="Tu nombre" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Email *</label>
+                                        <input type="email" class="form-control" placeholder="tu@email.com" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Telefono *</label>
+                                        <input type="tel" class="form-control" placeholder="+34 600 000 000" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Vehiculo de Interes</label>
+                                        <select class="form-control">
+                                            <option value="">Selecciona un vehiculo</option>
+                                            <option value="ferrari-f8">Ferrari F8 Spider</option>
+                                            <option value="ferrari-296">Ferrari 296 GTS</option>
+                                            <option value="lamborghini-huracan">Lamborghini Huracan EVO</option>
+                                            <option value="lamborghini-urus">Lamborghini Urus S</option>
+                                            <option value="porsche-911">Porsche 911 GT3</option>
+                                            <option value="mercedes-amg">Mercedes-AMG GT</option>
+                                            <option value="mercedes-g63">Mercedes-AMG G63</option>
+                                            <option value="bentley">Bentley Continental GTC</option>
+                                            <option value="range-rover">Range Rover Sport SVR</option>
+                                            <option value="bmw-m4">BMW M4 Competition</option>
+                                            <option value="mustang">Ford Mustang GT 5.0</option>
+                                            <option value="otro">Otro / Consultar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Fecha de Inicio *</label>
+                                        <input type="date" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Fecha de Fin *</label>
+                                        <input type="date" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Lugar de Entrega</label>
+                                <input type="text" class="form-control" placeholder="Aeropuerto, hotel, direccion...">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Mensaje Adicional</label>
+                                <textarea class="form-control" rows="4" placeholder="Cuentanos mas detalles sobre tu reserva..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-gold w-100">Enviar Solicitud</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Map & Additional Info -->
+                <div class="col-lg-5">
+                    <div class="map-container mb-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.5927449839604!2d2.1818193!3d41.3753383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f9cb7b1b13%3A0x65d12f3baa567e7!2sMaremagnum!5e0!3m2!1ses!2ses!4v1704300000000!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h4 class="mb-3"><i class="fas fa-building me-2 text-gold"></i>Nuestras Sedes</h4>
+                        <div class="mb-3">
+                            <strong>Barcelona</strong>
+                            <p class="mb-0">Moll d'Espanya, 5 (Maremagnum)</p>
+                        </div>
+                        <div class="mb-3">
+                            <strong>Madrid</strong>
+                            <p class="mb-0">Via de Servicio A-1, km 28 (Circuito Jarama)</p>
+                        </div>
+                        <div class="mb-3">
+                            <strong>Marbella</strong>
+                            <p class="mb-0">Av. Bulevar Principe Alfonso de Hohenlohe, 29</p>
+                        </div>
+                        <div>
+                            <strong>Ibiza</strong>
+                            <p class="mb-0">Carretera de l'Aeroport, 78</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Atencion <span class="text-gold">24 Horas</span></h2>
+                <p>Nuestro equipo esta disponible las 24 horas del dia para atender cualquier consulta o emergencia durante tu alquiler.</p>
+                <a href="tel:+34647881713" class="btn-gold"><i class="fas fa-phone me-2"></i>Llamar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 footer-col">
+                    <a href="index.html" class="footer-brand">MDTECH SOFT</a>
+                    <p class="footer-description">Especialistas en alquiler de coches de lujo y superdeportivos. Ofrecemos una experiencia premium con los mejores vehiculos del mercado.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 footer-col">
+                    <h4 class="footer-title">Enlaces</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Inicio</a>
+                        <a href="flota.html">Nuestra Flota</a>
+                        <a href="contacto.html">Contacto</a>
+                        <a href="#">Condiciones</a>
+                        <a href="#">Privacidad</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h4 class="footer-title">Marcas</h4>
+                    <div class="footer-links">
+                        <a href="flota.html?marca=ferrari">Ferrari</a>
+                        <a href="flota.html?marca=lamborghini">Lamborghini</a>
+                        <a href="flota.html?marca=porsche">Porsche</a>
+                        <a href="flota.html?marca=mercedes">Mercedes</a>
+                        <a href="flota.html?marca=bmw">BMW</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Moll d'Espanya, 5<br>08039 Barcelona, Espana</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+34 918 10 74 28<br>+34 647 881 713</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>reservas@MDTECH SOFT.es</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>2024 MDTECH SOFT. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Diseno Premium | Coches de Lujo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

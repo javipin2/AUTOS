@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Flota | MDTECH SOFT - Alquiler de Coches de Lujo</title>
+    <meta name="description" content="Explora nuestra flota completa de coches de lujo y superdeportivos. Ferrari, Lamborghini, Porsche y mas disponibles para alquiler.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-logo">MDTECH SOFT</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MDTECH SOFT</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"><span></span></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="flota.html">Flota</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Marcas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="flota.html?marca=ferrari">Ferrari</a></li>
+                            <li><a class="dropdown-item" href="flota.html?marca=lamborghini">Lamborghini</a></li>
+                            <li><a class="dropdown-item" href="flota.html?marca=porsche">Porsche</a></li>
+                            <li><a class="dropdown-item" href="flota.html?marca=mercedes">Mercedes</a></li>
+                            <li><a class="dropdown-item" href="flota.html?marca=bmw">BMW</a></li>
+                            <li><a class="dropdown-item" href="flota.html?marca=audi">Audi</a></li>
+                            <li><a class="dropdown-item" href="flota.html?marca=range-rover">Range Rover</a></li>
+                            <li><a class="dropdown-item" href="flota.html?marca=bentley">Bentley</a></li>
+                            <li><a class="dropdown-item" href="flota.html?marca=ford-mustang">Ford Mustang</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn-gold" href="contacto.html#reservar">Reservar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Nuestra <span class="text-gold">Flota</span></h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active">Flota</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section class="fleet-section section-padding">
+        <div class="container">
+            <!-- Filters -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="superdeportivo">Superdeportivos</button>
+                <button class="filter-btn" data-filter="alta-gama">Alta Gama</button>
+                <button class="filter-btn" data-filter="suv">SUV Premium</button>
+            </div>
+
+            <div class="row g-4" id="fleet-grid">
+                <!-- Ferrari F8 Spider -->
+                <div class="col-lg-4 col-md-6 car-item" data-category="superdeportivo" data-brand="ferrari">
+                    <div class="car-card fade-in">
+                        <div class="car-card-image">
+                            <img src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=600&q=80" alt="Ferrari F8 Spider">
+                            <span class="car-card-badge">Destacado</span>
+                        </div>
+                        <div class="car-card-content">
+                            <span class="car-card-category">Superdeportivo</span>
+                            <h3 class="car-card-title">Ferrari F8 Spider</h3>
+                            <div class="car-card-specs">
+                                <span class="spec-item"><i class="fas fa-bolt"></i> 720 CV</span>
+                                <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 340 km/h</span>
+                                <span class="spec-item"><i class="fas fa-stopwatch"></i> 2.9s</span>
+                            </div>
+                            <div class="car-card-price">
+                                <span class="price-amount">1.649</span>
+                                <span class="price-period">EUR / dia</span>
+                            </div>
+                            <div class="car-card-actions">
+                                <a href="contacto.html#reservar" class="btn-gold">Reservar</a>
+                                <a href="detalle.html" class="btn-outline">+ Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ferrari 296 GTS -->
+                <div class="col-lg-4 col-md-6 car-item" data-category="superdeportivo" data-brand="ferrari">
+                    <div class="car-card fade-in">
+                        <div class="car-card-image">
+                            <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=600&q=80" alt="Ferrari 296 GTS">
+                            <span class="car-card-badge">Nuevo</span>
+                        </div>
+                        <div class="car-card-content">
+                            <span class="car-card-category">Superdeportivo</span>
+                            <h3 class="car-card-title">Ferrari 296 GTS</h3>
+                            <div class="car-card-specs">
+                                <span class="spec-item"><i class="fas fa-bolt"></i> 830 CV</span>
+                                <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 330 km/h</span>
+                                <span class="spec-item"><i class="fas fa-stopwatch"></i> 2.9s</span>
+                            </div>
+                            <div class="car-card-price">
+                                <span class="price-amount">1.749</span>
+                                <span class="price-period">EUR / dia</span>
+                            </div>
+                            <div class="car-card-actions">
+                                <a href="contacto.html#reservar" class="btn-gold">Reservar</a>
+                                <a href="detalle.html" class="btn-outline">+ Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lamborghini Huracan EVO -->
+                <div class="col-lg-4 col-md-6 car-item" data-category="superdeportivo" data-brand="lamborghini">
+                    <div class="car-card fade-in">
+                        <div class="car-card-image">
+                            <img src="https://images.unsplash.com/photo-1621135802920-133df287f89c?w=600&q=80" alt="Lamborghini Huracan EVO">
+                        </div>
+                        <div class="car-card-content">
+                            <span class="car-card-category">Superdeportivo</span>
+                            <h3 class="car-card-title">Lamborghini Huracan EVO</h3>
+                            <div class="car-card-specs">
+                                <span class="spec-item"><i class="fas fa-bolt"></i> 640 CV</span>
+                                <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 325 km/h</span>
+                                <span class="spec-item"><i class="fas fa-stopwatch"></i> 2.9s</span>
+                            </div>
+                            <div class="car-card-price">
+                                <span class="price-amount">1.499</span>
+                                <span class="price-period">EUR / dia</span>
+                            </div>
+                            <div class="car-card-actions">
+                                <a href="contacto.html#reservar" class="btn-gold">Reservar</a>
+                                <a href="detalle.html" class="btn-outline">+ Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lamborghini Urus -->
+                <div class="col-lg-4 col-md-6 car-item" data-category="suv" data-brand="lamborghini">
+                    <div class="car-card fade-in">
+                        <div class="car-card-image">
+                            <img src="https://images.unsplash.com/photo-1636761358954-324e0eb46521?w=600&q=80" alt="Lamborghini Urus">
+                        </div>
+                        <div class="car-card-content">
+                            <span class="car-card-category">SUV Premium</span>
+                            <h3 class="car-card-title">Lamborghini Urus S</h3>
+                            <div class="car-card-specs">
+                                <span class="spec-item"><i class="fas fa-bolt"></i> 666 CV</span>
+                                <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 305 km/h</span>
+                                <span class="spec-item"><i class="fas fa-stopwatch"></i> 3.5s</span>
+                            </div>
+                            <div class="car-card-price">
+                                <span class="price-amount">1.649</span>
+                                <span class="price-period">EUR / dia</span>
+                            </div>
+                            <div class="car-card-actions">
+                                <a href="contacto.html#reservar" class="btn-gold">Reservar</a>
+                                <a href="detalle.html" class="btn-outline">+ Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Porsche 911 GT3 -->
+                <div class="col-lg-4 col-md-6 car-item" data-category="superdeportivo" data-brand="porsche">
+                    <div class="car-card fade-in">
+                        <div class="car-card-image">
+                            <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f373e?w=600&q=80" alt="Porsche 911 GT3">
+                        </div>
+                        <div class="car-card-content">
+                            <span class="car-card-category">Superdeportivo</span>
+                            <h3 class="car-card-title">Porsche 911 GT3</h3>
+                            <div class="car-card-specs">
+                                <span class="spec-item"><i class="fas fa-bolt"></i> 510 CV</span>
+                                <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 318 km/h</span>
+                                <span class="spec-item"><i class="fas fa-stopwatch"></i> 3.4s</span>
+                            </div>
+                            <div class="car-card-price">
+                                <span class="price-amount">949</span>
+                                <span class="price-period">EUR / dia</span>
+                            </div>
+                            <div class="car-card-actions">
+                                <a href="contacto.html#reservar" class="btn-gold">Reservar</a>
+                                <a href="detalle.html" class="btn-outline">+ Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Porsche 911 Carrera -->
+                <div class="col-lg-4 col-md-6 car-item" data-category="alta-gama" data-brand="porsche">
+                    <div class="car-card fade-in">
+                        <div class="car-card-image">
+                            <img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=600&q=80" alt="Porsche 911 Carrera">
+                        </div>
+                        <div class="car-card-content">
+                            <span class="car-card-category">Alta Gama</span>
+                            <h3 class="car-card-title">Porsche 911 Carrera S Cabrio</h3>
+                            <div class="car-card-specs">
+                                <span class="spec-item"><i class="fas fa-bolt"></i> 450 CV</span>
+                                <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 308 km/h</span>
+                                <span class="spec-item"><i class="fas fa-stopwatch"></i> 3.7s</span>
+                            </div>
+                            <div class="car-card-price">
+                                <span class="price-amount">799</span>
+                                <span class="price-period">EUR / dia</span>
+                            </div>
+                            <div class="car-card-actions">
+                                <a href="contacto.html#reservar" class="btn-gold">Reservar</a>
+                                <a href="detalle.html" class="btn-outline">+ Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mercedes AMG GT -->
+                <div class="col-lg-4 col-md-6 car-item" data-category="alta-gama" data-brand="mercedes">
+                    <div class="car-card fade-in">
+                        <div class="car-card-image">
+                            <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&q=80" alt="Mercedes AMG GT">
+                        </div>
+                        <div class="car-card-content">
+                            <span class="car-card-category">Alta Gama</span>
+                            <h3 class="car-card-title">Mercedes-AMG GT Roadster</h3>
+                            <div class="car-card-specs">
+                                <span class="spec-item"><i class="fas fa-bolt"></i> 585 CV</span>
+                                <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 317 km/h</span>
+                                <span class="spec-item"><i class="fas fa-stopwatch"></i> 3.7s</span>
+                            </div>
+                            <div class="car-card-price">
+                                <span class="price-amount">799</span>
+                                <span class="price-period">EUR / dia</span>
+                            </div>
+                            <div class="car-card-actions">
+                                <a href="contacto.html#reservar" class="btn-gold">Reservar</a>
+                                <a href="detalle.html" class="btn-outline">+ Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mercedes G63 AMG -->
+                <div class="col-lg-4 col-md-6 car-item" data-category="suv" data-brand="mercedes">
+                    <div class="car-card fade-in">
+                        <div class="car-card-image">
+                            <img src="https://images.unsplash.com/photo-1520031441872-265e4ff70366?w=600&q=80" alt="Mercedes G63 AMG">
+                        </div>
+                        <div class="car-card-content">
+                            <span class="car-card-category">SUV Premium</span>
+                            <h3 class="car-card-title">Mercedes-AMG G63</h3>
+                            <div class="car-card-specs">
+                                <span class="spec-item"><i class="fas fa-bolt"></i> 585 CV</span>
+                                <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 220 km/h</span>
+                                <span class="spec-item"><i class="fas fa-stopwatch"></i> 4.5s</span>
+                            </div>
+                            <div class="car-card-price">
+                                <span class="price-amount">949</span>
+                                <span class="price-period">EUR / dia</span>
+                            </div>
+                            <div class="car-card-actions">
+                                <a href="contacto.html#reservar" class="btn-gold">Reservar</a>
+                                <a href="detalle.html" class="btn-outline">+ Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BMW M4 Competition -->
+                <div class="col-lg-4 col-md-6 car-item" data-category="alta-gama" data-brand="bmw">
+                    <div class="car-card fade-in">
+                        <div class="car-card-image">
+                            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=600&q=80" alt="BMW M4 Competition">
+                        </div>
+                        <div class="car-card-content">
+                            <span class="car-card-category">Alta Gama</span>
+                            <h3 class="car-card-title">BMW M4 Competition Cabrio</h3>
+                            <div class="car-card-specs">
+                                <span class="spec-item"><i class="fas fa-bolt"></i> 510 CV</span>
+                                <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 250 km/h</span>
+                                <span class="spec-item"><i class="fas fa-stopwatch"></i> 3.4s</span>
+                            </div>
+                            <div class="car-card-price">
+                                <span class="price-amount">599</span>
+                                <span class="price-period">EUR / dia</span>
+                            </div>
+                            <div class="car-card-actions">
+                                <a href="contacto.html#reservar" class="btn-gold">Reservar</a>
+                                <a href="detalle.html" class="btn-outline">+ Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bentley Continental -->
+                <div class="col-lg-4 col-md-6 car-item" data-category="alta-gama" data-brand="bentley">
+                    <div class="car-card fade-in">
+                        <div class="car-card-image">
+                            <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=600&q=80" alt="Bentley Continental GTC">
+                        </div>
+                        <div class="car-card-content">
+                            <span class="car-card-category">Alta Gama</span>
+                            <h3 class="car-card-title">Bentley Continental GTC</h3>
+                            <div class="car-card-specs">
+                                <span class="spec-item"><i class="fas fa-bolt"></i> 550 CV</span>
+                                <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 318 km/h</span>
+                                <span class="spec-item"><i class="fas fa-stopwatch"></i> 4.1s</span>
+                            </div>
+                            <div class="car-card-price">
+                                <span class="price-amount">1.199</span>
+                                <span class="price-period">EUR / dia</span>
+                            </div>
+                            <div class="car-card-actions">
+                                <a href="contacto.html#reservar" class="btn-gold">Reservar</a>
+                                <a href="detalle.html" class="btn-outline">+ Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Range Rover Sport -->
+                <div class="col-lg-4 col-md-6 car-item" data-category="suv" data-brand="range-rover">
+                    <div class="car-card fade-in">
+                        <div class="car-card-image">
+                            <img src="https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?w=600&q=80" alt="Range Rover Sport SVR">
+                        </div>
+                        <div class="car-card-content">
+                            <span class="car-card-category">SUV Premium</span>
+                            <h3 class="car-card-title">Range Rover Sport SVR</h3>
+                            <div class="car-card-specs">
+                                <span class="spec-item"><i class="fas fa-bolt"></i> 575 CV</span>
+                                <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 283 km/h</span>
+                                <span class="spec-item"><i class="fas fa-stopwatch"></i> 4.5s</span>
+                            </div>
+                            <div class="car-card-price">
+                                <span class="price-amount">599</span>
+                                <span class="price-period">EUR / dia</span>
+                            </div>
+                            <div class="car-card-actions">
+                                <a href="contacto.html#reservar" class="btn-gold">Reservar</a>
+                                <a href="detalle.html" class="btn-outline">+ Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ford Mustang GT -->
+                <div class="col-lg-4 col-md-6 car-item" data-category="alta-gama" data-brand="ford-mustang">
+                    <div class="car-card fade-in">
+                        <div class="car-card-image">
+                            <img src="https://images.unsplash.com/photo-1584345604476-8ec5f82d718c?w=600&q=80" alt="Ford Mustang GT">
+                        </div>
+                        <div class="car-card-content">
+                            <span class="car-card-category">Alta Gama</span>
+                            <h3 class="car-card-title">Ford Mustang GT 5.0 Cabrio</h3>
+                            <div class="car-card-specs">
+                                <span class="spec-item"><i class="fas fa-bolt"></i> 450 CV</span>
+                                <span class="spec-item"><i class="fas fa-tachometer-alt"></i> 249 km/h</span>
+                                <span class="spec-item"><i class="fas fa-stopwatch"></i> 4.8s</span>
+                            </div>
+                            <div class="car-card-price">
+                                <span class="price-amount">400</span>
+                                <span class="price-period">EUR / dia</span>
+                            </div>
+                            <div class="car-card-actions">
+                                <a href="contacto.html#reservar" class="btn-gold">Reservar</a>
+                                <a href="detalle.html" class="btn-outline">+ Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 footer-col">
+                    <a href="index.html" class="footer-brand">MDTECH SOFT</a>
+                    <p class="footer-description">Especialistas en alquiler de coches de lujo y superdeportivos. Ofrecemos una experiencia premium con los mejores vehiculos del mercado.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 footer-col">
+                    <h4 class="footer-title">Enlaces</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Inicio</a>
+                        <a href="flota.html">Nuestra Flota</a>
+                        <a href="contacto.html">Contacto</a>
+                        <a href="#">Condiciones</a>
+                        <a href="#">Privacidad</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h4 class="footer-title">Marcas</h4>
+                    <div class="footer-links">
+                        <a href="flota.html?marca=ferrari">Ferrari</a>
+                        <a href="flota.html?marca=lamborghini">Lamborghini</a>
+                        <a href="flota.html?marca=porsche">Porsche</a>
+                        <a href="flota.html?marca=mercedes">Mercedes</a>
+                        <a href="flota.html?marca=bmw">BMW</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-col">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Moll d'Espanya, 5<br>08039 Barcelona, Espana</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+34 918 10 74 28<br>+34 647 881 713</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>reservas@MDTECH SOFT.es</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>2024 MDTECH SOFT. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Diseno Premium | Coches de Lujo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
